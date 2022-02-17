@@ -20,12 +20,10 @@ node v14.18.2
 
 ## 运行操作
 
-安装依赖 npm install
-运行项目 npm run serve
-打包项目 npm run build
+安装依赖 npm install  运行项目 npm run serve  打包项目 npm run build
 
 ## 在线示例
-http://101.43.140.74:60
+http://101.43.140.74:60 （请使用手机端运行）
 
 ## 服务端接口
 https://www.yuque.com/docs/share/2549e10c-5e01-4ae4-94c6-0fc475cd7a72?#
