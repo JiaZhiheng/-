@@ -72,7 +72,7 @@ export default {
   @import url('../config/custom.less');
   .pop {
     position: relative;
-    background-color: #f5f5f5;
+    background-color: @background;
     .header {
       position: sticky;
       top: 0;

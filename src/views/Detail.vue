@@ -96,7 +96,7 @@ export default {
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #f5f5f5;
+    background-color: @background;
     padding: 12px 24px 0 24px;
   }
   .card {
@@ -122,7 +122,7 @@ export default {
         background-color: @primary;
       }
       .income {
-        background-color: @text-warning;
+        background-color: @secondary;
       }
     }
     .amount {

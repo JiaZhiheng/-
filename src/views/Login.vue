@@ -178,7 +178,7 @@ export default {
     .change-btn {
       text-align: center;
       margin: 10px 0;
-      color: @link-color;
+      color: @button-color;
       font-size: 14px;
     }
   }
@@ -186,7 +186,7 @@ export default {
     color:#86909c;
   }
   /deep/ .van-field__error-message{
-    color:#f56c6c;
+    color:@danger;
   }
   /**
     * 样式分析

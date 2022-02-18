@@ -114,7 +114,7 @@ export default {
 @import url("../config/custom.less");
 .user {
   min-height: 100%;
-  background-color: #f5f5f5;
+  background-color: @background;
   padding: 12px;
   .head {
     display: flex;

@@ -37,7 +37,7 @@
           </div>
           <div class="right">
             <div class="percent">
-              <van-progress :percentage="Number((item.number / Number(totalType == 'expense' ? total_expense : total_income)) * 100)" stroke-width="6px" :show-pivot="false" track-color="#ffffff" :color=" totalType == 'expense' ? '#1ee3cf' : 'rgb(236, 190, 37)' " />
+              <van-progress :percentage="Number((item.number / Number(totalType == 'expense' ? total_expense : total_income)) * 100)" stroke-width="6px" :show-pivot="false" track-color="#ffffff" :color=" totalType == 'expense' ? '#1ee3cf' : '#ECBE25' " />
             </div>
             <div class="money">¥{{ Number(item.number).toFixed(2) || 0 }}</div>
           </div>
@@ -201,7 +201,7 @@ export default {
   @import url('../config/custom.less');
   .data {
     min-height: 100%;
-    background-color: #f5f5f5;
+    background-color: @background;
     .total {
       background-color: #fff;
       display: flex;
@@ -213,7 +213,7 @@ export default {
         position: relative;
         width: 96px;
         padding: 6px;
-        background-color: #f5f5f5;
+        background-color: @background;
         color: @color-text-base;
         border-radius: 4px;
         font-size: 14px;
@@ -247,7 +247,7 @@ export default {
           font-weight: 500;
         }
         .title_income {
-          color: @text-warning;
+          color: @secondary;
           margin-bottom: 8px;
           font-size: 12px;
           font-weight: 500;
@@ -260,7 +260,7 @@ export default {
         }
         .money_income {
           font-size: 28px;
-          color: @text-warning;
+          color: @secondary;
           font-weight: 600;
           margin-bottom: 16px;
         }
@@ -288,7 +288,7 @@ export default {
             display: inline-block;
             width: 40px;
             height: 24px;
-            background-color: #f5f5f5;
+            background-color: @background;
             text-align: center;
             line-height: 24px;
             margin-left: 10px;
@@ -296,14 +296,14 @@ export default {
           }
           .expense {
             &.active {
-              background-color: rgba(91,209,215,0.2);
+              background-color: @primary-bg;
               color: @primary;
             }
           }
           .income {
             &.active {
-              background-color: #fbf8f0;
-              color: @text-warning;
+              background-color: @secondary-bg;
+              color: @secondary;
             }
           }
         }
@@ -336,7 +336,7 @@ export default {
                 background-color: @primary;
               }
               .income {
-                background-color: rgb(236, 190, 37);
+                background-color: @secondary;
               }
             }
           }
@@ -371,7 +371,7 @@ export default {
             display: inline-block;
             width: 40px;
             height: 24px;
-            background-color: #f5f5f5;
+            background-color: @background;
             text-align: center;
             line-height: 24px;
             margin-left: 10px;
@@ -379,14 +379,14 @@ export default {
           }
           .expense {
             &.active {
-              background-color: rgba(91,209,215,0.2);
+              background-color: @primary-bg;
               color: @primary;
             }
           }
           .income {
             &.active {
-              background-color: #fbf8f0;
-              color: @text-warning;
+              background-color: @secondary-bg;
+              color: @secondary;
             }
           }
         }

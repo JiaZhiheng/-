@@ -234,26 +234,26 @@ export default {
       .type {
         span {
           display: inline-block;
-          background: #f5f5f5;
+          background: @background;
           color: @color-text-caption;
           padding: 4px 12px;
           font-size: 12px;
           border-radius: 24px;
-          border: 1px solid #f5f5f5;
+          border: 1px solid @background;
         }
         .expense {
           margin-right: 6px;
           &.active {
-            background-color: rgba(91,209,215,0.2);
+            background-color: @primary-bg;
             border-color: @primary;
             color: @primary;
           }
         }
         .income {
           &.active {
-            background-color: #fbf8f0;
-            border-color:@text-warning;
-            color: @text-warning;
+            background-color: @secondary-bg;
+            border-color:@secondary;
+            color: @secondary;
           }
         }
       }
@@ -325,7 +325,7 @@ export default {
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #f5f5f5;
+            background-color: @background;
             border-radius: 50%;
             width: 30px;
             height: 30px;
@@ -345,7 +345,7 @@ export default {
           }
           .income {
              &.active {
-              background-color: @text-warning;
+              background-color: @secondary;
               .iconfont {
                 color: #fff;
               }

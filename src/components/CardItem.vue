@@ -88,7 +88,7 @@ export default {
           b {
             color: @color-text-caption;
             font-weight: normal;
-            background-color: #f5f5f5;
+            background-color: @background;
             padding: 3px;
             margin-right: 2px;
           }
@@ -107,7 +107,7 @@ export default {
   }
   .income {
     .van-cell__value {
-      color: @text-warning!important;
+      color: @secondary!important;
     }
   }
 /**

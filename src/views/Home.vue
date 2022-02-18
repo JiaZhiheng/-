@@ -191,7 +191,7 @@ export default {
     padding: 20px 20px;
     z-index: 100;
     .type-wrap {
-      background-color: #4bc2c5;
+      background-color: @support;
       display: inline-block;
       padding: 6px;
       border-radius: 4px;
@@ -228,7 +228,7 @@ export default {
     height: calc(~"(100% - 50px)");
     overflow: hidden;
     overflow-y: scroll;
-    background-color: #f5f5f5;
+    background-color: @background;
     padding: 10px;
     // padding-bottom: 50px;
   }
