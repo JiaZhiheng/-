@@ -91,7 +91,7 @@ export default {
   setup() {
     const verifyRef = ref(null)
     const state = reactive({
-      username: '贾志恒',
+      username: 'Daisy',
       password: '123456',
       type: 'login', // 登录注册模式切换参数
       verify: '', // 验证码输入框输入的内容
@@ -156,7 +156,7 @@ export default {
   .auth {
     height: calc(~"(100% - 46px)");
     padding: 30px 20px 0 20px;
-    background:@primary-bg;
+    background:@background;
     .logo {
       width: 150px;
       display: block;
@@ -186,7 +186,7 @@ export default {
     color:#86909c;
   }
   /deep/ .van-field__error-message{
-    color:@danger;
+    color:#f56c6c;
   }
   /**
     * 样式分析

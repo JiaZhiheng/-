@@ -1,7 +1,7 @@
 <template>
   <div class="user">
     <div class="head">
-      <img class="avatar" src="//s.yezgea02.com/1606836859539/onpeice.png" />
+      <img class="avatar" src="../assets/header.png" />
       <div class="info">
         <span class="name">{{ user.username || "" }}</span>
         <span class="slogen">个性签名：{{ user.signature || "" }}</span>
