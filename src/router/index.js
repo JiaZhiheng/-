@@ -10,7 +10,9 @@ import Home from '../views/Home.vue'
 
 // createRouter 创建路由实例
 const router = createRouter({
-  history: createWebHashHistory(), // hash模式：createWebHashHistory，history模式：createWebHistory
+  history: createWebHashHistory(),
+  // hash模式：createWebHashHistory
+  // history模式：createWebHistory
   routes: [
     {
       path: '/',
@@ -53,5 +55,5 @@ const router = createRouter({
     }
   ]
 })
-
+// 抛出路由实例，在 main.js 中引用
 export default router
