@@ -99,11 +99,11 @@ export default {
       loading: false
     })
     /**
-      * 表单提交方法，分别调用登录和注册 API 地址。
-      * try...catch 写法可以捕获到 /user/register 接口调用异常的情况，
-      * 如果没成功，可以在 catch 中捕获错误，
-      * 逻辑是将按钮 loading 变量变成 false。
-      */
+     * 表单提交方法，分别调用登录和注册 API 地址。
+     * try...catch 写法可以捕获到 /user/register 接口调用异常的情况，
+     * 如果没成功，可以在 catch 中捕获错误，
+     * 逻辑是将按钮 loading 变量变成 false。
+     */
     // 提交登录 or 注册表单
     const onSubmit = async (values) => {
       try {
