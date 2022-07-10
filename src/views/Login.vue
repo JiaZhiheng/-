@@ -80,7 +80,7 @@ import { reactive, toRefs, ref, onMounted } from 'vue'
 import VueImgVerify from '../components/VueImageVerify.vue'
 import Header from '../components/Header.vue'
 import axios from '../utils/axios'
-import { Toast } from 'vant'
+import { Toast } from 'vant'  // Toast 组件
 import router from '../router'
 export default {
   name: 'Login',
@@ -96,7 +96,7 @@ export default {
       type: 'login', // 登录注册模式切换参数
       verify: '', // 验证码输入框输入的内容
       imgCode: '', // 生成的验证图片内的文字
-      loading: false
+      loading: false  // 默认为否
     })
     /**
      * 表单提交方法，分别调用登录和注册 API 地址。
